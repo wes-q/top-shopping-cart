@@ -1,10 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import RouteSwitch from "./RouteSwitch";
+import './styles.scss';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+// Import all of Bootstrap's JS
+import * as bootstrap from 'bootstrap'
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <RouteSwitch />
+  </React.StrictMode>
+);
